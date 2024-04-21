@@ -68,6 +68,7 @@ class CubeFace {
     this.anchor.download = `${faceDirection}.${fileExtension}`;
     this.img.style.filter = '';
 
+    this.anchor.setAttribute('download', `${faceDirection}.${fileExtension}`);
     console.log(`Face direction for ${this.faceName}: ${faceDirection}`);
   }
 }
