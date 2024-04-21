@@ -63,6 +63,8 @@ class CubeFace {
     };
     
     const faceDirection = directionNames[direction];
+
+    print(faceDirection);
     
     this.anchor.href = url;
     this.anchor.download = `${faceDirection}.${fileExtension}`;
