@@ -54,10 +54,10 @@ class CubeFace {
     const direction = this.faceName.substring(0, 2);
     
     const directionNames = {
-        pz: 'front',
-        nz: 'back',
-        px: 'right',
-        nx: 'left',
+        pz: 'right',
+        nz: 'left',
+        px: 'front',
+        nx: 'back',
         py: 'top',
         ny: 'bottom'
     };
