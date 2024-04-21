@@ -51,8 +51,21 @@ class CubeFace {
   }
 
   setDownload(url, fileExtension) {
+    const direction = this.faceName.substring(0, 2);
+    
+    const directionNames = {
+        pz: 'front',
+        nz: 'back',
+        px: 'right',
+        nx: 'left',
+        py: 'top',
+        ny: 'bottom'
+    };
+    
+    const faceDirection = directionNames[direction];
+    
     this.anchor.href = url;
-    this.anchor.download = `${this.faceName}.${fileExtension}`;
+    this.anchor.download = `${faceDirection}.${fileExtension}`;
     this.img.style.filter = '';
   }
 }
